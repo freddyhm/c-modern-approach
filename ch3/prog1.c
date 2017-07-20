@@ -8,12 +8,12 @@
 
 int main(void)
 {
-	// prompt user for input
-	printf("Enter a date (mm/dd/yyyy): ");
-
 	int month = 0;
 	int day = 0;
 	int year = 0;
+
+	// prompt user for input
+	printf("Enter a date (mm/dd/yyyy): ");
 
 	// read input from user
 	scanf("%d/%d/%d", &month, &day, &year);
