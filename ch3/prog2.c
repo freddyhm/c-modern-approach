@@ -35,11 +35,12 @@ int main(void)
 	scanf("%d/%d/%d", &month, &day, &year);
 
 	// print out special header
-	printf("Item\tUnit\tPurchase\n");
-	printf("\tPrice\tDate\n"); 
+	printf("Item\t\t\tUnit\t\t\tPurchase\n");
+	printf("\t\t\tPrice\t\t\tDate\n"); 
 
 	// print out special format
-	printf("%-d\t$%6.2f\t%.2d/%.2d/%d\n", item_num, unit_price, month, day, year);
+	// "-" left justifies and with %7.2f the "7" is the number of characters including the . and the 2 is the num after the decimal
+	printf("%-d\t\t\t$%7.2f\t\t%-.2d/%-.2d/%-d\n", item_num, unit_price, month, day, year);
 
 	return 0;
 
