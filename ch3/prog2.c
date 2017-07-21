@@ -39,8 +39,9 @@ int main(void)
 	printf("\t\t\tPrice\t\t\tDate\n"); 
 
 	// print out special format
-	// "-" left justifies and with %7.2f the "7" is the number of characters including the . and the 2 is the num after the decimal
-	printf("%-d\t\t\t$%7.2f\t\t%-.2d/%-.2d/%-d\n", item_num, unit_price, month, day, year);
+	// %6.2f the "6" is the number of characters excluding the . and the 2 is the num after the decimal
+	// left justified by default
+	printf("%d\t\t\t$%6.2f\t\t%.2d/%.2d/%d\n", item_num, unit_price, month, day, year);
 
 	return 0;
 
