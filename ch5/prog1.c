@@ -1,6 +1,6 @@
 /*
  * Author: Freddy Hidalgo-Monchez
- * Purpose: Calculaes how many digits a number contains
+ * Purpose: Calculates how many digits an inputted number contains
  */
 
 #include <stdio.h>
